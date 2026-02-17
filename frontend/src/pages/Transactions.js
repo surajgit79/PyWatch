@@ -173,7 +173,7 @@ function Transactions() {
             <div className="flex gap-3">
               <button
                 onClick={() => setShowFilters(!showFilters)}
-                className="btn-secondary relative"
+                className="px-6 py-3.5 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-xl hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold flex items-center gap-2"
               >
                 <FunnelIcon className="w-5 h-5" />
                 Filters
@@ -185,7 +185,7 @@ function Transactions() {
               </button>
               <button
                 onClick={() => setShowAddModal(true)}
-                className="btn-primary"
+                className="px-6 py-3.5 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-xl hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold flex items-center gap-2"
               >
                 <PlusIcon className="w-5 h-5" />
                 Add Transaction
@@ -360,7 +360,7 @@ function Transactions() {
               </p>
               <button
                 onClick={() => setShowAddModal(true)}
-                className="btn-primary"
+                className="px-6 py-3.5 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-xl hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold flex items-center gap-2"
               >
                 <PlusIcon className="w-5 h-5" />
                 Add Your First Transaction

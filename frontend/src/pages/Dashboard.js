@@ -176,7 +176,7 @@ function Dashboard() {
                 <p className="text-3xl font-bold text-secondary-900 mb-1">
                   ${Number(data?.totals?.total_limit_usd)?.toFixed(2) || '0.00'}
                 </p>
-                <p className="text-sm text-secondary-500">Total available</p>
+                <p className="text-sm text-secondary-500">Total Credit</p>
               </div>
             </div>
 
@@ -213,7 +213,7 @@ function Dashboard() {
                   ${Number(data?.spending_summary?.total_usd)?.toFixed(2) || '0.00'}
                 </p>
                 <p className="text-sm text-secondary-500">
-                  NPR {(Number(data?.spending_summary?.total_usd || 0)) * (exchangeRate || 0).toFixed(2)}
+                  NPR {(Number(data?.spending_summary?.total_usd || 0) * (exchangeRate || 0)).toFixed(2)}
                 </p>
               </div>
             </div>
@@ -339,7 +339,7 @@ function Dashboard() {
                     <CreditCardIcon className="w-10 h-10 text-secondary-400" />
                   </div>
                   <p className="text-secondary-500 mb-4 font-medium">No cards added yet</p>
-                  <button className="btn-primary">
+                  <button className="px-6 py-3.5 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-xl hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold flex items-center gap-2">
                     <CreditCardIcon className="w-5 h-5" />
                     Add Your First Card
                   </button>
