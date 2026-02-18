@@ -39,6 +39,7 @@ def register():
             return jsonify(result), 400
         
         try:
+            print("Trying to send email")
             send_verification_email( user_email=result['email'], verification_token=result['verification_token'])
             print("[DEBUG] Verification email sent")
         except Exception as email_error:

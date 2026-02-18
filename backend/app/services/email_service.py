@@ -17,7 +17,7 @@ def send_email(to_email, subject, body):
         print(f"Error sending email: {e}")
         return False
 
-def send_trial_ending_reminder(user_email, service_name, days_remaining):
+def send_tr_remial_endinginder(user_email, service_name, days_remaining):
     subject = f"Trial Ending Soon: {service_name}"
     
     body = f"""

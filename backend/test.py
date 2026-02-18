@@ -1,3 +1,6 @@
-from app.services import exchange_rate
+import smtplib
+import os
 
-exchange_rate.get_latest_exchange_rate()
+server = smtplib.SMTP("smtp.gmail.com", 587)
+server.starttls()
+server.login(os.getenv("MAIL_USERNAME"), os.getenv("MAIL_PASSWORD"))
